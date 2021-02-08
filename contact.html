@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/contact/contact.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&family=Signika:wght@300;700&family=Source+Code+Pro:ital,wght@0,400;0,500;0,700;1,200;1,400;1,700&display=swap" rel="stylesheet">
+
+
+    <!--! ONLINE PLUGINS -->
+    <!--! global -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    
+    <!-- GSAP -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script> -->
+    <script src="./js/gsap/gsap_off.js"></script>
+
+</head>
+<body>
+<section class="contact">
+    <nav>
+        <div class="logo">
+            <div class="logo-container">
+                <div id="R-1" class="r-logo">R</div>
+                <div id="R-2" class="r-logo">R</div>
+            </div>
+            <div class="dev">DEV</div>
+        </div>
+        <div class="icon-area">
+            <div class="icon-container active" id="icon-home" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                <a href="./home.html" class="" data-splitting>home</a>
+            </div>
+            <div class="icon-container" id="icon-about">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                <a href="./about.html" data-splitting>about</a>
+            </div>
+            <div class="icon-container" id="icon-skills">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                <a href="./skills.html"  data-splitting>skills</a>
+            </div>
+            <div class="icon-container" id="icon-works">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                <a href="work.html" class="active" data-splitting>works</a>
+            </div>
+            <div class="icon-container" id="icon-contact">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share-2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg> -->
+                <a href="#" class="active" data-splitting>contact</a>
+            </div>
+        </div>
+    </nav>
+    <main class="contact-container">
+        <div class="path">>_ R-DEV/works</div>
+        <div class="contact-content-container">
+            <div class="contact-title-container">
+                <div class="contact-title _title">Contact us..</div>
+            </div>
+            <div class="form-area">
+                <form action="" >
+                    <div class="form__item item-1">
+						<label class="form__label" for="firstname">First Name</label>
+						<input class="form__input" type="text" name="firstname" id="firstname">
+						<span class="form__placeholder">First Name</span>
+					</div>
+					<div class="form__item item-2">
+						<label class="form__label" for="lastname">Last Name</label>
+						<input class="form__input" type="text" name="lastname" id="lastname">
+						<span class="form__placeholder">Last Name</span>
+					</div>
+					<div class="form__item item-3">
+						<label class="form__label" for="email">Email Address</label>
+						<input class="form__input" type="email" name="email" id="email">
+						<span class="form__placeholder">Email Address</span>
+					</div>
+					<div class="form__item item-4">
+						<label class="form__label" for="message">Message</label>
+						<textarea class="form__input" type="email" name="email" id="email"></textarea>
+						<span class="form__placeholder">Message</span>
+					</div>
+					<!-- <div class="form__item item-4">
+						<input class="form__button" type="submit" name="register" value="Sign up">
+					</div> -->
+                </form>
+            </div>
+        </div>
+        <div class="social-area">
+            <div class="navigation-wrapper">
+                <div class="project-preview-wrapper">
+                    <div class="project-preview"></div>
+                </div>
+                <ul class="navigation-list">
+                    <li class="navigation-item item1">
+                        <a class="navigation-link navigation-link-1" href="#">
+                        <span data-text="Twitter">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link navigation-link-1" href="#">
+                        <span data-text="Github">Github</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link navigation-link-1" href="#">
+                        <span data-text="LinkedIn">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link navigation-link-1" href="#">
+                        <span data-text="Dribble">Dribble</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link navigation-link-1" href="#">
+                        <span data-text="Facebook">Facebook</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</section> 
+
+<!-- <img src="./img/works/1.png" alt="" srcset=""> -->
+
+<script src="./js/plugin/nearby.js"></script>
+<script src="./js/contact/contact.js"></script>
+
+</body>
+</html>

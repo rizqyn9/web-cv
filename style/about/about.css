@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Alegreya:ital@0;1&family=Amaranth:ital@0;1&family=Open+Sans&family=Titillium+Web:ital@0;1&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amarante&family=Bebas+Neue&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  letter-spacing: .1vw;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black;
+}
+
+.path {
+  font-weight: 100;
+  font-style: italic;
+  font-size: 1.4vw;
+  position: absolute;
+  -webkit-transform: translate(5vw, 4vh);
+          transform: translate(5vw, 4vh);
+}
+
+main {
+  position: relative;
+  width: 90vw;
+  height: 100%;
+  padding-top: 4vh;
+}
+
+._title {
+  font-size: 3.5rem;
+  letter-spacing: .3vw;
+}
+
+._content {
+  line-height: 1.5em;
+  font-size: 1rem;
+  color: #28BFE5;
+  font-weight: 100;
+}
+
+nav {
+  width: 5rem;
+  height: 100%;
+  background-color: #1C2541;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 100;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  overflow: hidden;
+  position: relative;
+}
+
+nav .logo {
+  width: 5rem;
+  background-color: #4f5f80;
+  height: 6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+nav .logo .logo-container {
+  pointer-events: visibleFill;
+  position: relative;
+  height: 3.5rem;
+  width: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .logo .logo-container .r-logo {
+  font-size: 3rem;
+  position: absolute;
+}
+
+nav .logo .logo-container #R-1 {
+  -webkit-transform: translate(0.8rem, 0.5rem);
+          transform: translate(0.8rem, 0.5rem);
+  color: black;
+}
+
+nav .logo .logo-container #R-2 {
+  -webkit-transform: translate(0.4rem, 0.5rem);
+          transform: translate(0.4rem, 0.5rem);
+  color: #6FFFE9;
+}
+
+nav .logo .dev {
+  color: #6FFFE9;
+  font-size: 1.5rem;
+}
+
+nav .icon-area {
+  width: 5rem;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow: hidden;
+}
+
+nav .icon-area .icon-container {
+  width: 5rem;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+nav .icon-area .icon-container:hover a {
+  display: contents;
+  width: 100%;
+}
+
+nav .icon-area .icon-container:hover svg {
+  display: none;
+  color: #6FFFE9;
+}
+
+nav .icon-area .icon-container a, nav .icon-area .icon-container .active {
+  text-decoration: none;
+  display: none;
+  font-weight: 100;
+  letter-spacing: .01rem;
+  color: #6FFFE9;
+  text-shadow: 0 0 1em cyan;
+  width: 100%;
+  height: 100%;
+}
+
+nav .icon-area .icon-container svg {
+  color: #3B5F96;
+}
+
+nav .icon-area .icon-container .active {
+  display: contents;
+  width: 100%;
+  height: 5rem;
+}
+
+nav .icon-area .active {
+  border-radius: 50% 0 0 50%;
+}
+
+.cursor {
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.cursor--large {
+  --size: 5vw;
+  border: 1px solid #6FFFE9;
+}
+
+.cursor--small {
+  --size: .9vw;
+  background: #6FFFE9;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+canvas {
+  top: 0vh;
+  left: 50vw;
+  background-color: transparent;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+}
+
+.about {
+  font-weight: 900;
+  font-family: "Signika", sans-serif;
+  color: #28BFE5;
+  width: 100%;
+  height: 100%;
+  background-color: #08091D;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about main {
+  z-index: 100;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 4vh;
+}
+
+.about main .about-content-container {
+  -webkit-transform: translate(5vw);
+          transform: translate(5vw);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.about main .about-content-container .about-title-container {
+  position: absolute;
+  -webkit-transform: translate(0, 20vh);
+          transform: translate(0, 20vh);
+}
+
+.about main .about-content-container .contents-container {
+  position: absolute;
+  -webkit-transform: translate(0, 30vh);
+          transform: translate(0, 30vh);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about main .about-content-container .contents-container .about-contents {
+  padding-top: 1rem;
+  line-height: 1.5em;
+  letter-spacing: .4vw;
+  font-size: 1.5rem;
+  color: #28BFE5;
+  font-weight: 100;
+}
+
+.about main .about-content-container .contents-container .about-contents .line-rev {
+  height: 1.5em;
+  overflow: hidden;
+}
+
+.about main .about-content-container .contents-container .about-contents .line-rev .line {
+  display: inline-block;
+}
+
+.about main .decorations {
+  position: relative;
+}
+
+.about main .decorations img {
+  position: absolute;
+  width: 30vw;
+}
+
+.about main .decorations img:nth-child(2) {
+  -webkit-transform: translate(52vw, 42vh);
+          transform: translate(52vw, 42vh);
+  width: 18vh;
+}
+
+.about main .decorations img:nth-child(3) {
+  -webkit-transform: translate(67vw, 18vh);
+          transform: translate(67vw, 18vh);
+  width: 8vh;
+}
+
+.about main .decorations img:nth-child(4) {
+  -webkit-transform: translate(60vw, 75vh);
+          transform: translate(60vw, 75vh);
+  width: 10vh;
+}
+
+.about main .decorations img:nth-child(5) {
+  -webkit-transform: translate(62vw, 63vh);
+          transform: translate(62vw, 63vh);
+  width: 21vh;
+}
+
+.about main .decorations img:nth-child(6) {
+  -webkit-transform: translate(55vw, 28vh);
+          transform: translate(55vw, 28vh);
+  width: 17vh;
+}
+
+.about main .decorations img:nth-child(7) {
+  -webkit-transform: translate(53vw, 26vh);
+          transform: translate(53vw, 26vh);
+  width: 17vh;
+}
+
+.about main .decorations .big-img {
+  position: absolute;
+  -webkit-transform: translate(50vw, 20vh);
+          transform: translate(50vw, 20vh);
+  width: 52vh;
+}
+
+.about main .decorations .svg-container {
+  position: absolute;
+}
+
+.about main .decorations .svg-container svg {
+  position: absolute;
+}
+
+.about main .decorations .svg-container svg:nth-child(1) {
+  -webkit-transform: translate(52vw, -22vh);
+          transform: translate(52vw, -22vh);
+  width: 10vw;
+}
+
+.about main .decorations .svg-container svg:nth-child(2) {
+  -webkit-transform: translate(54vw, -35vh);
+          transform: translate(54vw, -35vh);
+  width: 9vw;
+}
+
+.about main .decorations .svg-container svg:nth-child(3) {
+  -webkit-transform: translate(52.5vw, 5vh);
+          transform: translate(52.5vw, 5vh);
+  width: 2vw;
+}
+
+.about main .decorations .svg-container svg:nth-child(4) {
+  -webkit-transform: translate(52.5vw, 5vh);
+          transform: translate(52.5vw, 5vh);
+  width: 10vw;
+}
+/*# sourceMappingURL=about.css.map */

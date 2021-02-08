@@ -1,0 +1,129 @@
+// body{
+//     width: 100vw;
+//     height: 100vh;
+//     background-color: black;
+//     // overflow: hidden;
+//     color: cyan;
+// }
+
+// #icon-area{
+//     width: 5vw;
+//     height: 100vh;
+//     // background-color: rgb(38, 0, 255);
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-around;
+    
+// }
+// .icon-container{
+//     // background-color: red;
+//     position: relative;
+//     width: 100%;
+//     height: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     // pointer-events: none;
+//     // &:hover{
+//     //     svg{
+//     //         display: none;
+//     //     }
+//     //     a{
+//     //         display: block;
+//     //     }
+//     // }
+//     &::after{
+//         position: absolute;
+//         content: '';
+//         // background-color: red;
+//         width: 3rem;
+//         height: 3rem;
+//         z-index: 10;
+//         pointer-events: fill;
+//     }
+//     &:hover{
+//         &::after{
+//             // background-color: blue;
+//             border-radius: 1.5rem;
+//             border: 1px solid white;
+//         }
+//     }
+//     svg{
+//         color: white;
+//         &:hover{
+//             display: none;
+//         }
+//     }
+
+//     a{
+//         color: cyan;
+//         text-decoration: none;
+//         display: none;
+//         &:hover{
+//             display: block;
+//         }
+//     }
+
+// }
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    color: cyan;
+    display: flex;
+}
+
+#icon-area{
+    width: 3rem;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .icon-container{
+        height: 3rem;
+        background-color: darkblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        
+        // &:hover{
+        //     a{
+        //         display: contents;
+        //         color: cyan;
+        //         text-decoration: none;
+        //         width: 100%;
+        //     }
+        //     svg{
+        //         display: none;
+        //     }
+        // }
+        a{
+            color: cyan;
+            opacity: 0;
+            width: 0;
+            height: 0;
+            transition: all 2s ease;
+            background-color: red;
+        }
+        svg{
+            transition: all 1s ease;
+            &:hover{
+                display: none;
+            }
+        }
+    }
+}
+// .tes1{
+//     width: 100vw;
+//     height: 100vh;
+//     background-color: red;
+//     z-index: 0;
+//     transition: width 2s linear ;
+//     &:hover{
+//         width: 0vw;
+//     }
+// }

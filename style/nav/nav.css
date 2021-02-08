@@ -1,0 +1,60 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+  color: cyan;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#icon-area {
+  width: 3rem;
+  height: 100vh;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#icon-area .icon-container {
+  height: 3rem;
+  background-color: darkblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+#icon-area .icon-container a {
+  color: cyan;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+  background-color: red;
+}
+
+#icon-area .icon-container svg {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+#icon-area .icon-container svg:hover {
+  display: none;
+}
+/*# sourceMappingURL=nav.css.map */

@@ -1,0 +1,144 @@
+@import '../modular/variables';
+@import '../modular/temp';
+@import '../modular/nav';
+@import '../modular/cursor';
+
+// #globalArea{
+//     transform: translate(0,0vh);
+//     position: absolute;
+//     z-index: 1;
+//     width: 100%;
+//     height: 100vh;
+//     // background: transparent;;
+//     // border: 1px solid white;
+// }
+// body{
+//     overflow: auto;
+// }
+
+canvas{
+    top: 0vh;
+    left: 50vw;
+    background-color: transparent;
+    position: absolute;
+    width:50%;
+    height:50%;
+}
+.about{
+    font-weight: 900;
+    font-family: $fontSiginika;
+    color: $color2;
+    width: 100%;
+    height: 100%;
+    background-color: $color1;
+    overflow: hidden;
+    display: flex;
+
+    main{
+        z-index: 100;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-top: 4vh;
+        
+        .about-content-container{
+            // background-color: red;
+            transform: translate(5vw);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            .about-title-container{
+                // background-color: white;
+                position: absolute;
+                transform: translate(0,20vh);
+                .about-title{
+                    // background-color: red;
+                }
+            }
+            .contents-container{
+                // background-color: blue;
+                position: absolute;
+                transform: translate(0,30vh);
+                width: max-content;
+                height: 50vh;
+                display: flex;
+                flex-direction: column;
+                .about-contents{
+                    padding-top: 1rem;
+                    line-height: 1.5em;
+                    letter-spacing: .4vw;
+                    font-size: 1.5rem;
+                    color: $color2;
+                    font-weight: 100;
+                    .line-rev{
+                        height: 1.5em;
+                        overflow: hidden;
+                        .line{
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+        .decorations{
+            position: relative;
+            img{
+                position: absolute;
+                width: 30vw;
+                &:nth-child(2){
+                    transform: translate(52vw,42vh);
+                    width: 18vh;
+                }
+                &:nth-child(3){
+                    transform: translate(67vw,18vh);
+                    width: 8vh;
+                }
+                &:nth-child(4){
+                    transform: translate(60vw,75vh);
+                    width: 10vh;
+                }
+                &:nth-child(5){
+                    transform: translate(62vw,63vh);
+                    width: 21vh;
+                }
+                &:nth-child(6){
+                    transform: translate(55vw,28vh);
+                    width: 17vh;
+                }
+                &:nth-child(7){
+                    transform: translate(53vw,26vh);
+                    width: 17vh;
+                }
+            }
+            .big-img{
+                position: absolute;
+                transform: translate(50vw,20vh);
+                width: 52vh;
+            }
+            .svg-container{
+                position: absolute;
+                svg{
+                    position: absolute;
+                    &:nth-child(1){
+                        transform: translate(52vw,-22vh);
+                        width: 10vw;
+                    }
+                    &:nth-child(2){
+                        transform: translate(54vw,-35vh);
+                        width: 9vw;
+                    }
+                    &:nth-child(3){
+                        transform: translate(52.5vw,5vh);
+                        // background-color: red;
+                        width: 2vw;
+                    }
+                    &:nth-child(4){
+                        transform: translate(52.5vw,5vh);
+                        // background-color: red;
+                        width: 10vw;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.cursor {
+	width: var(--size);
+	height: var(--size);
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	pointer-events: none;
+	z-index: 100;
+	&--large {
+		--size: 5vw;
+		border: 1px solid $color6;
+	}
+	&--small {
+		--size: .9vw;
+		background: $color6;
+	    transform: translate(-50%, -50%);
+	}
+}

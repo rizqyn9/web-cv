@@ -1,0 +1,32 @@
+html, body {
+
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+header {
+
+    position: absolute;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    z-index: 1000;
+    display: non;
+}
+
+#globalArea {
+  
+    height: 100vw;
+    width: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+  color: #ff0000;
+}
+

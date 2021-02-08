@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Alegreya:ital@0;1&family=Amaranth:ital@0;1&family=Open+Sans&family=Titillium+Web:ital@0;1&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amarante&family=Bebas+Neue&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  letter-spacing: .1vw;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black;
+}
+
+.path {
+  font-weight: 100;
+  font-style: italic;
+  font-size: 1.4vw;
+  position: absolute;
+  -webkit-transform: translate(5vw, 4vh);
+          transform: translate(5vw, 4vh);
+}
+
+main {
+  position: relative;
+  width: 90vw;
+  height: 100%;
+  padding-top: 4vh;
+}
+
+._title {
+  font-size: 3.5rem;
+  letter-spacing: .3vw;
+}
+
+._content {
+  line-height: 1.5em;
+  font-size: 1rem;
+  color: #28BFE5;
+  font-weight: 100;
+}
+
+nav {
+  width: 5rem;
+  height: 100%;
+  background-color: #1C2541;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 100;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  overflow: hidden;
+  position: relative;
+}
+
+nav .logo {
+  width: 5rem;
+  background-color: #4f5f80;
+  height: 6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+nav .logo .logo-container {
+  pointer-events: visibleFill;
+  position: relative;
+  height: 3.5rem;
+  width: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .logo .logo-container .r-logo {
+  font-size: 3rem;
+  position: absolute;
+}
+
+nav .logo .logo-container #R-1 {
+  -webkit-transform: translate(0.8rem, 0.5rem);
+          transform: translate(0.8rem, 0.5rem);
+  color: black;
+}
+
+nav .logo .logo-container #R-2 {
+  -webkit-transform: translate(0.4rem, 0.5rem);
+          transform: translate(0.4rem, 0.5rem);
+  color: #6FFFE9;
+}
+
+nav .logo .dev {
+  color: #6FFFE9;
+  font-size: 1.5rem;
+}
+
+nav .icon-area {
+  width: 5rem;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow: hidden;
+}
+
+nav .icon-area .icon-container {
+  width: 5rem;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+nav .icon-area .icon-container:hover a {
+  display: contents;
+  width: 100%;
+}
+
+nav .icon-area .icon-container:hover svg {
+  display: none;
+  color: #6FFFE9;
+}
+
+nav .icon-area .icon-container a, nav .icon-area .icon-container .active {
+  text-decoration: none;
+  display: none;
+  font-weight: 100;
+  letter-spacing: .01rem;
+  color: #6FFFE9;
+  text-shadow: 0 0 1em cyan;
+  width: 100%;
+  height: 100%;
+}
+
+nav .icon-area .icon-container svg {
+  color: #3B5F96;
+}
+
+nav .icon-area .icon-container .active {
+  display: contents;
+  width: 100%;
+  height: 5rem;
+}
+
+nav .icon-area .active {
+  border-radius: 50% 0 0 50%;
+}
+
+.cursor {
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.cursor--large {
+  --size: 5vw;
+  border: 1px solid #6FFFE9;
+}
+
+.cursor--small {
+  --size: .9vw;
+  background: #6FFFE9;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.contact {
+  font-weight: 900;
+  font-family: "Signika", sans-serif;
+  color: #28BFE5;
+  width: 100%;
+  height: 100%;
+  background-color: #08091D;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact main {
+  z-index: 100;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 4vh;
+}
+
+.contact main .contact-content-container {
+  -webkit-transform: translate(5vw);
+          transform: translate(5vw);
+  position: absolute;
+  width: 100%;
+  height: 90vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  place-content: center;
+}
+
+.contact main .contact-content-container .contact-title-container {
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+.contact main .contact-content-container .form-area {
+  margin-top: 0vh;
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+.contact main .contact-content-container .form-area form {
+  height: 50vh;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: (max-content)[3];
+      grid-template-rows: repeat(3, -webkit-max-content);
+      grid-template-rows: repeat(3, max-content);
+  grid-gap: .5rem;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+}
+
+.contact main .contact-content-container .form-area form .form__item {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact main .contact-content-container .form-area form .item-1 {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+.contact main .contact-content-container .form-area form .item-2 {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.contact main .contact-content-container .form-area form .item-3 {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.contact main .contact-content-container .form-area form .item-4 {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  height: 20vh;
+}
+
+.contact main .contact-content-container .form-area form .item-4 textarea {
+  height: 100%;
+}
+
+.contact main .contact-content-container .form-area form .item-4 .form__placeholder {
+  width: 100%;
+  height: 90%;
+}
+
+.contact main .contact-content-container .form-area form .form__label {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 0 0.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  color: #234afc;
+}
+
+.contact main .contact-content-container .form-area form .form__label span {
+  opacity: 0;
+}
+
+.contact main .contact-content-container .form-area form .form__label span,
+.contact main .contact-content-container .form-area form .form__placeholder span {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  white-space: pre;
+}
+
+.contact main .contact-content-container .form-area form .form__input {
+  display: block;
+  font-size: 1.25rem;
+  padding: 1.5rem;
+  width: 100%;
+  border: 0;
+  background: #131313;
+  position: relative;
+  font-weight: bold;
+  color: #fff;
+}
+
+.contact main .contact-content-container .form-area form .form__input:focus {
+  outline: none;
+}
+
+.contact main .contact-content-container .form-area form input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 10rem #131313 inset;
+  -webkit-text-fill-color: #fff !important;
+}
+
+.contact main .contact-content-container .form-area form .form__placeholder {
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  font-size: 1.25rem;
+  pointer-events: none;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  color: #234afc;
+  font-weight: bold;
+}
+
+.contact main .contact-content-container .form-area form .form__input:focus ~ .form__placeholder span {
+  opacity: 0;
+}
+
+.contact main .social-area {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  -webkit-transform: translate(100%, 0);
+          transform: translate(100%, 0);
+}
+
+.contact .navigation-wrapper {
+  height: 100%;
+}
+
+.contact .navigation-wrapper ul {
+  height: 100%;
+  list-style: none;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 3rem;
+}
+
+.contact .navigation-item {
+  display: block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin: 0 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.contact a {
+  font-family: "Signika", sans-serif;
+  font-size: 10vh;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.contact span {
+  position: relative;
+  display: block;
+}
+
+.contact .navigation-item span:before {
+  width: 0;
+  color: #ffffff;
+  overflow: hidden;
+  position: absolute;
+  content: attr(data-text);
+  -webkit-transition: all 1s cubic-bezier(0.84, 0, 0.08, 0.99);
+  transition: all 1s cubic-bezier(0.84, 0, 0.08, 0.99);
+}
+
+.contact .navigation-item span:hover:before {
+  width: 100%;
+}
+/*# sourceMappingURL=contact.css.map */

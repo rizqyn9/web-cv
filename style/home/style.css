@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Alegreya:ital@0;1&family=Amaranth:ital@0;1&family=Open+Sans&family=Titillium+Web:ital@0;1&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amarante&family=Bebas+Neue&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  letter-spacing: .1vw;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black;
+}
+
+.path {
+  font-weight: 100;
+  font-style: italic;
+  font-size: 1.4vw;
+  position: absolute;
+  -webkit-transform: translate(5vw, 4vh);
+          transform: translate(5vw, 4vh);
+}
+
+main {
+  position: relative;
+  width: 90vw;
+  height: 100%;
+  padding-top: 4vh;
+}
+
+._title {
+  font-size: 3.5rem;
+  letter-spacing: .3vw;
+}
+
+._content {
+  line-height: 1.5em;
+  font-size: 1rem;
+  color: #28BFE5;
+  font-weight: 100;
+}
+
+nav {
+  width: 5rem;
+  height: 100%;
+  background-color: #1C2541;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 100;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  overflow: hidden;
+  position: relative;
+}
+
+nav .logo {
+  width: 5rem;
+  background-color: #4f5f80;
+  height: 6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+nav .logo .logo-container {
+  pointer-events: visibleFill;
+  position: relative;
+  height: 3.5rem;
+  width: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .logo .logo-container .r-logo {
+  font-size: 3rem;
+  position: absolute;
+}
+
+nav .logo .logo-container #R-1 {
+  -webkit-transform: translate(0.8rem, 0.5rem);
+          transform: translate(0.8rem, 0.5rem);
+  color: black;
+}
+
+nav .logo .logo-container #R-2 {
+  -webkit-transform: translate(0.4rem, 0.5rem);
+          transform: translate(0.4rem, 0.5rem);
+  color: #6FFFE9;
+}
+
+nav .logo .dev {
+  color: #6FFFE9;
+  font-size: 1.5rem;
+}
+
+nav .icon-area {
+  width: 5rem;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow: hidden;
+}
+
+nav .icon-area .icon-container {
+  width: 5rem;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+nav .icon-area .icon-container:hover a {
+  display: contents;
+  width: 100%;
+}
+
+nav .icon-area .icon-container:hover svg {
+  display: none;
+  color: #6FFFE9;
+}
+
+nav .icon-area .icon-container a, nav .icon-area .icon-container .active {
+  text-decoration: none;
+  display: none;
+  font-weight: 100;
+  letter-spacing: .01rem;
+  color: #6FFFE9;
+  text-shadow: 0 0 1em cyan;
+  width: 100%;
+  height: 100%;
+}
+
+nav .icon-area .icon-container svg {
+  color: #3B5F96;
+}
+
+nav .icon-area .icon-container .active {
+  display: contents;
+  width: 100%;
+  height: 5rem;
+}
+
+nav .icon-area .active {
+  border-radius: 50% 0 0 50%;
+}
+
+.cursor {
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.cursor--large {
+  --size: 5vw;
+  border: 1px solid #6FFFE9;
+}
+
+.cursor--small {
+  --size: .9vw;
+  background: #6FFFE9;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.off-event {
+  pointer-events: none;
+}
+
+.tilt {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.home {
+  font-weight: 900;
+  font-family: "Signika", sans-serif;
+  color: #28BFE5;
+  width: 100%;
+  height: 100%;
+  background-color: #08091D;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home main {
+  position: relative;
+  width: 100%;
+  padding-top: 4vh;
+}
+
+.home main .home-hero {
+  color: #33D6FF;
+  position: absolute;
+  font-size: 2rem;
+  font-family: "Signika", sans-serif;
+}
+
+.home main .hello {
+  font-size: 6vw;
+  -webkit-transform: translate(19vw, 12vh);
+          transform: translate(19vw, 12vh);
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 0.1rem #33D6FF;
+  overflow: hidden;
+  width: 25vw;
+  height: 20vh;
+}
+
+.home main .iam {
+  width: 18vw;
+  font-size: 10.5vw;
+  -webkit-transform: translate(43vw, 10vh);
+          transform: translate(43vw, 10vh);
+  font-weight: 900;
+  overflow: hidden;
+}
+
+.home main .rizqy {
+  height: 30vh;
+  font-weight: 900;
+  font-size: 10.5vw;
+  -webkit-transform: translate(60vw, 10vh);
+          transform: translate(60vw, 10vh);
+  overflow: hidden;
+}
+
+.home main #web {
+  -webkit-transform: translate(6vw, 29vh);
+          transform: translate(6vw, 29vh);
+  pointer-events: none;
+}
+
+.home main #web svg {
+  height: 29vh;
+  width: 63vw;
+  -webkit-filter: drop-shadow(0px 0px 1rem);
+          filter: drop-shadow(0px 0px 1rem);
+}
+
+.home main #web svg #Full_Stack {
+  stroke: #6FFFE9;
+  stroke-width: 3px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 95px;
+  stroke-linejoin: round;
+}
+
+.home main #web svg #Full_Stack2 {
+  stroke-linejoin: round;
+  opacity: 0;
+  stroke: #33D6FF;
+  stroke-width: 7px;
+}
+
+.home main .based {
+  font-weight: 900;
+  font-size: 5.5vw;
+  -webkit-transform: translate(71vw, 37vh);
+          transform: translate(71vw, 37vh);
+  overflow: hidden;
+  height: 20vh;
+}
+
+.home main .indonesian {
+  font-size: 11.2vw;
+  -webkit-transform: translate(33vw, 53vh);
+          transform: translate(33vw, 53vh);
+  font-weight: 400;
+  overflow: hidden;
+}
+
+.home main .indonesian .char:hover {
+  font-weight: bolder;
+  display: inline-block;
+  -webkit-filter: drop-shadow(0 0 1);
+          filter: drop-shadow(0 0 1);
+  color: #33D6FF;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  -webkit-animation: exam .5s ease alternate;
+          animation: exam .5s ease alternate;
+}
+
+@-webkit-keyframes exam {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    color: #6FFFE9;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes exam {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    color: #6FFFE9;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+.home main .front {
+  font-size: 4.5vw;
+  -webkit-transform: translate(22vw, 56vh);
+          transform: translate(22vw, 56vh);
+  overflow: hidden;
+}
+
+.home main .end {
+  font-size: 4.5vw;
+  -webkit-transform: translate(22vw, 64vh);
+          transform: translate(22vw, 64vh);
+  overflow: hidden;
+}
+
+.home main .specializing {
+  font-weight: 900;
+  font-size: 1.9vw;
+  -webkit-transform: translate(9.5vw, 60vh);
+          transform: translate(9.5vw, 60vh);
+  overflow: hidden;
+}
+
+.home main .list-skills {
+  font-size: 2vh;
+  -webkit-transform: translate(0vw, -10vh);
+          transform: translate(0vw, -10vh);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #4f5f80;
+  pointer-events: none;
+}
+
+.home main .list-skills .circle {
+  width: .3vw;
+  height: 4vh;
+  background-color: #4f5f80;
+}
+
+.home main .list-skills .hl {
+  width: 20vw;
+  height: .5vh;
+  background-color: #4f5f80;
+  border-radius: .5vh;
+}
+/*# sourceMappingURL=style.css.map */

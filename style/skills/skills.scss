@@ -1,0 +1,70 @@
+@import '../modular/variables';
+@import '../modular/temp';
+@import '../modular/nav';
+@import '../modular/cursor';
+
+#myCanvasContainer{
+    z-index: 100;
+    transform: translate(30vw);
+    position: absolute;
+    // background-color: blue;
+    width: 70vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+#myCanvas{
+    position: absolute;
+    // background-color: cyan;
+    right: 3rem;
+    width: 70vh;
+    height: 70vh;
+}
+
+.skills{
+    font-weight: 900;
+    font-family: $fontSiginika;
+    color: $color2;
+    width: 100%;
+    height: 100%;
+    background-color: $color1;
+    overflow: hidden;
+    display: flex;
+    
+    main{
+        z-index: 1;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-top: 4vh;
+
+        .skills-content-container{
+            transform: translate(5vw,10vh);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            // border: 2px solid white;
+            .skills-title-container{
+                // background-color: white;
+                position: absolute;
+                transform: translate(0,20vh);
+                .about-title{
+                    // background-color: red;
+
+                }
+            }
+            .contents-container{
+                // background-color: blue;
+                position: absolute;
+                transform: translate(0,30vh);
+                width: 45vw;
+                height: 50vh;
+                display: flex;
+                flex-direction: column;
+                .about-contents{
+                    padding: 1vh 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,187 @@
+@import '../modular/variables';
+@import '../modular/temp';
+@import '../modular/nav';
+@import '../modular/cursor';
+
+// Color Variables
+
+.off-event{
+    pointer-events: none;
+}
+.tilt{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.home{
+    font-weight: 900;
+    font-family: $fontSiginika;
+    color: $color2;
+    width: 100%;
+    height: 100%;
+    background-color: $color1;
+    overflow: hidden;
+    display: flex;
+
+    main{
+        // background-color: aqua;
+        position: relative;
+        width: 100%;
+        padding-top: 4vh ;
+        // pointer-events: none;
+
+        .home-hero{
+            color: $color8;
+            position: absolute;
+            font-size: 2rem;
+            font-family: $fontSiginika;
+        }
+        .hello{
+            font-size: 6vw;
+            transform: translate(19vw,12vh);
+            font-weight: 900;
+            color: transparent;
+            -webkit-text-stroke: .1rem $color8;
+            overflow: hidden;
+            width: 25vw;
+            height: 20vh;
+            // &::before{
+            //     content: '';
+            //     position: absolute;
+            //     transform: translate(24vw,-1vh);
+            //     background-color: $color4;
+            //     width: 20vw;
+            //     height: 11vw;
+            //     animation: exam2 1s ease-in-out alternate;
+            //     @keyframes exam2 {
+            //         0%{
+            //             width: 0;
+            //         }50%{
+            //             width: 100%;
+            //         }100%{
+            //             width: 0;
+            //             display: none;
+            //         }
+            //     }
+            // }
+        }
+        .iam{
+            width: 18vw;
+            font-size: 10.5vw;
+            transform: translate(43vw,10vh);
+            font-weight: 900;
+            overflow: hidden;
+        }
+        .rizqy{
+            height: 30vh;
+            font-weight: 900;
+            font-size: 10.5vw;
+            transform: translate(60vw,10vh);
+            overflow: hidden;
+        }
+        #web{
+            transform: translate(6vw,29vh);
+            pointer-events: none;
+            svg{
+                // background-color: red;
+                height: 29vh;
+                width: 63vw;
+                filter: drop-shadow(0px 0px 1rem);
+                // pointer-events: none;
+                #Full_Stack{
+                    stroke: $color6;
+                    stroke-width: 3px;
+                    stroke-dashoffset: 0;
+                    stroke-dasharray: 95px;
+                    stroke-linejoin: round;
+                }
+                #Full_Stack2{
+                    stroke-linejoin: round;
+                    opacity: 0;
+                    stroke: $color8;
+                    stroke-width: 7px;
+                }
+            }
+            // font-weight: 900;
+            // color: transparent;
+            // -webkit-text-stroke: .1rem $color8;
+            // font-size: 11.5vw;
+        }
+        .based{
+            font-weight: 900;
+            font-size: 5.5vw;
+            transform: translate(71vw,37vh);
+            overflow: hidden;
+            height: 20vh;
+        }
+        .indonesian{
+            font-size: 11.2vw;
+            transform: translate(33vw,53vh);
+            font-weight: 400;
+            overflow: hidden;;
+            .char{
+
+            }
+            
+            .char:hover{
+                font-weight: bolder;
+                display: inline-block;
+                filter: drop-shadow(0 0 1);
+                color: $color8;
+                transform: rotate(20deg);
+                // -webkit-text-stroke: 5px $color8;
+                animation: exam .5s ease alternate;
+                @keyframes exam {
+                    0%{
+                        transform: scale(1);
+                    }
+                    100%{
+                        color: $color6;
+                        transform: scale(1.1);
+                        
+                    }
+                }
+            }
+        }
+        .front{
+            font-size: 4.5vw;
+            transform: translate(22vw,56vh);
+            overflow: hidden;
+        }
+        .end{
+            font-size: 4.5vw;
+            transform: translate(22vw,64vh);
+            overflow: hidden;
+        }
+        .specializing{
+            font-weight: 900;
+            font-size: 1.9vw;
+            transform: translate(9.5vw,60vh);
+            overflow: hidden;
+        }
+
+        .list-skills{
+            font-size: 2vh;
+            transform: translate(0vw,-10vh);
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+            color: $color3;
+            pointer-events: none;
+            .circle{
+                width: .3vw;
+                height: 4vh;
+                background-color: $color3;
+            }
+            .hl{
+                width: 20vw;
+                height: .5vh;
+                background-color: $color3;
+                border-radius: .5vh;
+            }
+        }
+
+
+    }
+}

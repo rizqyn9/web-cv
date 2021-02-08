@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<!-- ! Adding no-js to give class list for mobile touch version -->
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ! -->
+    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+
+
+    <link rel="stylesheet" href="./style/home/home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&family=Signika:wght@300;700&family=Source+Code+Pro:ital,wght@0,400;0,500;0,700;1,200;1,400;1,700&display=swap" rel="stylesheet">
+
+
+    <!--! ONLINE PLUGINS -->
+    <!--! global -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    
+    <!-- GSAP -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script> -->
+    <script src="./js/gsap/gsap_off.js"></script>
+    
+</head>
+<body class="loading">
+    <!-- <div class="load">
+        <hr/><hr/><hr/><hr/>
+    </div> -->
+    
+<section class="home">
+    <nav>
+        <div class="logo">
+            <div class="logo-container">
+                <div id="R-1" class="r-logo">R</div>
+                <div id="R-2" class="r-logo">R</div>
+            </div>
+            <div class="dev">DEV</div>
+        </div>
+        <div class="icon-area">
+            <div class="icon-container active" id="icon-home" >
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg> -->
+                <a href="./home.html" class="active" data-splitting>home</a>
+            </div>
+            <div class="icon-container" id="icon-about">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                <a href="./about.html" data-splitting>about</a>
+            </div>
+            <div class="icon-container" id="icon-skills">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                <a href="./skills.html" data-splitting>skills</a>
+            </div>
+            <div class="icon-container" id="icon-works">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                <a href="#" data-splitting>works</a>
+            </div>
+            <div class="icon-container" id="icon-contact">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share-2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                <a href="./contact.html" data-splitting>contact</a>
+            </div>
+        </div>
+    </nav>
+    <div class="loader"></div>
+    <main class="home-container">
+        <div class="path">>_ R-DEV/works</div>
+        <div class="home-content-container" >
+            <div class="home-title-container">
+                <div class="home-title" >
+                    <div class="title _title">Hello</div>
+                    <div class="title _title">I'm</div>
+                    <div class="title _title">Rizqy</div>
+                </div>
+                <div class="contents-container" >
+                    <div class="text line1" >a <span class="full-stack">Full-Stack</span> web development</div>
+                    <div class="text line2"> based in Indonesian</div>
+                </div>
+            </div>
+            <div class="svg-container">
+                <svg viewBox="0 0 800 600">
+                    <symbol id="s-text">
+                        <text text-anchor="middle"
+                            x="50%"
+                            y="25%"
+                            class="text--line1"
+                            >
+                        UI / UX
+                        </text>
+                        <text text-anchor="middle"
+                            x="50%"
+                            y="55%"
+                            class="text--line2"
+                            >
+                        WEB DEV
+                        </text>
+                        <text text-anchor="middle"
+                            x="50%"
+                            y="85%"
+                            class="text--line3"
+                            >
+                        APP DEV
+                        </text>
+                    </symbol>
+                    
+                    <g class="g-ants">
+                        <use xlink:href="#s-text"
+                            class="text-copy"></use>     
+                        <use xlink:href="#s-text"
+                            class="text-copy"></use>     
+                        <use xlink:href="#s-text"
+                            class="text-copy"></use>     
+                        <use xlink:href="#s-text"
+                            class="text-copy"></use>     
+                        <use xlink:href="#s-text"
+                            class="text-copy"></use>     
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </main>
+</section> 
+
+
+<div class="cursor cursor--large"></div>
+<div class="cursor cursor--small"></div>
+
+
+<script>
+    let loading = document.querySelector('.loading')
+    console.log(loading);
+    setTimeout(() => {
+        document.body.classList.remove('loading')
+    },5000)
+
+</script>
+<script src="./js/nav.js"></script>
+<script src="./js/cursor.js"></script>
+<script src="./js/home/home.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/about/about.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&family=Signika:wght@300;700&family=Source+Code+Pro:ital,wght@0,400;0,500;0,700;1,200;1,400;1,700&display=swap" rel="stylesheet">
+
+
+    <!--! ONLINE PLUGINS -->
+    <!--! global -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    
+    <!--particle JS -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.11/tsparticles.min.js" integrity="sha512-SrYSABdk01dnXiEz2YOFvpgWn/vePlQwbr/Od+rs6x8/hjfLfR6YfZuU+qW4QaQYnl8mL1a4DgjMMdiXShNzjg==" crossorigin="anonymous"></script> -->
+
+    <!-- GSAP -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script> -->
+    <script src="./js/gsap/gsap_off.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r61/three.min.js"></script>
+    
+</head>
+<body>
+<section class="about">
+    <nav>
+        <div class="logo">
+            <div class="logo-container">
+                <div id="R-1" class="r-logo">R</div>
+                <div id="R-2" class="r-logo">R</div>
+            </div>
+            <div class="dev">DEV</div>
+        </div>
+        <div class="icon-area">
+            <div class="icon-container active" id="icon-home" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                <a href="./home.html"  data-splitting>home</a>
+            </div>
+            <div class="icon-container" id="icon-about">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> -->
+                <a href="#" class="active" data-splitting>about</a>
+            </div>
+            <div class="icon-container" id="icon-skills">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                <a href="./skills.html" data-splitting>skills</a>
+            </div>
+            <div class="icon-container" id="icon-works">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                <a href="work.html" data-splitting>works</a>
+            </div>
+            <div class="icon-container" id="icon-contact">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share-2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                <a href="./contact.html" data-splitting>contact</a>
+            </div>
+        </div>
+    </nav>
+    <main class="about-container">
+        <div class="path">>_ R-DEV/about</div>
+        <div class="about-content-container">
+            <div class="about-title-container">
+                <div class="about-title _title">About me.</div>
+            </div>
+            <div class="contents-container" >
+                <div class="about-contents content">
+                    <div class="line-rev"><span class="line"> Hi I’m Rizqy Prastya.</span></div>
+                    <div class="line-rev"><span class="line"> a 20 years old Indonesian</span></div>
+                    <div class="line-rev"><span class="line"> Student in Game Dev Multimedia Training Centre University</span></div>
+                    <div class="line-rev"><span class="line"> I’m currently working as freelance </span></div>
+                    <div class="line-rev"><span class="line"> Full Stack Web Dev based in Indonesian.</span></div>
+                </div>
+                <div class="about-contents content" id="content2" data-splitting>
+                    <div class="line-rev"><span class="line"> I love bending the rules of CSS, </span></div>
+                    <div class="line-rev"><span class="line"> Making generative art,</span></div>
+                    <div class="line-rev"><span class="line"> and playing with WebGL.</span></div>
+                    <div class="line-rev"><span class="line"> I have experience with style code at scale,</span></div>
+                </div>
+            </div>
+        </div>
+        <div id="canvas-area"></div>
+    </main>
+    <!-- !GLOBE -->
+    <div id="globalArea"></div>
+    <div id="container"></div>
+
+</section> 
+
+<div class="cursor cursor--large"></div>
+<div class="cursor cursor--small"></div>
+
+<!-- Script Section -->
+<script src="./js/earth.js"></script>
+<script src="./js/about/about.js"></script>
+<!-- !CursorScript -->
+<script src="./js/nav.js"></script> 
+<script src="./js/about/cursor-about.js"></script>
+</body>
+</html>
